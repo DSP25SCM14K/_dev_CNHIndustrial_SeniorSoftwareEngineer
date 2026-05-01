@@ -514,14 +514,14 @@ h3 {
   stroke: rgba(255, 255, 255, 0.22);
 }
 
-.note text:first-of-type {
+.note-title {
   fill: var(--yellow);
   font-family: "JetBrains Mono", monospace;
   font-size: 13px;
   font-weight: 800;
 }
 
-.note text:not(:first-of-type) {
+.note-line {
   fill: var(--text);
   font-family: Inter, sans-serif;
   font-size: 15px;
