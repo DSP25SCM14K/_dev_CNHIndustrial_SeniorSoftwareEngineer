@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dev Kumar portfolio focused on cloud telemetry systems, event-driven .NET services, Azure ingestion, APIs, and operationally mature software."
+    />
+    <title>Dev Kumar | Cloud Telemetry Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="data-scan" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Dev Kumar home">
+          <span class="brand-mark">DK</span>
+          <span>Dev Kumar</span>
+        </a>
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="#systems">Systems</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+        </div>
+        <a class="nav-action" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="section-inner hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">C# / Azure / event-driven telemetry / production APIs</p>
+            <h1>
+              I build cloud services that keep machine data
+              <span id="dynamicText" class="dynamic-text">moving with trust.</span>
+            </h1>
+            <p class="hero-lede">
+              Backend engineer focused on high-throughput ingestion, versioned data contracts, fault-tolerant .NET
+              services, and observable APIs. The work I like most is where equipment, sensors, users, and cloud systems
+              meet, and the platform has to stay calm under bursty, imperfect real-world data.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button ghost" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+            </div>
+          </div>
+
+          <div class="telemetry-console reveal" aria-label="Telemetry service console">
+            <div class="console-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="console-body">
+              <div class="console-row active">
+                <span>edge</span>
+                <strong>equipment telemetry + intermittent links</strong>
+              </div>
+              <div class="console-row">
+                <span>ingest</span>
+                <strong>Event Hubs / Kafka / Service Bus</strong>
+              </div>
+              <div class="console-row">
+                <span>contract</span>
+                <strong>schema versioning + validation</strong>
+              </div>
+              <div class="console-row">
+                <span>serve</span>
+                <strong>ASP.NET Core APIs + SQL/NoSQL models</strong>
+              </div>
+              <div class="console-row">
+                <span>observe</span>
+                <strong>App Insights + traces + SLO alerts</strong>
+              </div>
+            </div>
+            <div class="throughput-panel">
+              <span>pipeline pressure</span>
+              <div class="meter"><i></i></div>
+              <strong>idempotent handlers online</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metric-band" aria-label="Impact highlights">
+        <div class="metric">
+          <strong>5M+</strong>
+          <span>daily records ingested</span>
+        </div>
+        <div class="metric">
+          <strong>99.99%</strong>
+          <span>uptime achieved</span>
+        </div>
+        <div class="metric">
+          <strong>40%</strong>
+          <span>faster API response</span>
+        </div>
+        <div class="metric">
+          <strong>2 days</strong>
+          <span>release cycle reached</span>
+        </div>
+      </section>
+
+      <section id="systems" class="section systems-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Architecture habit</p>
+            <h2>Telemetry platforms need patience for bad inputs</h2>
+            <p>
+              Industrial systems rarely send perfect data in perfect order. I design for versioned contracts,
+              idempotency, retries, dead-letter paths, backfills, and observability so the platform can absorb reality
+              and still produce consistent APIs for downstream teams.
+            </p>
+          </div>
+
+          <div class="diagram-panel reveal">
+            <svg class="system-diagram" viewBox="0 0 1160 540" role="img" aria-labelledby="diagramTitle diagramDesc">
+              <title id="diagramTitle">Cloud telemetry ingestion and API architecture</title>
+              <desc id="diagramDesc">
+                Diagram showing machine telemetry flowing through edge normalization, event ingestion, contract
+                validation, idempotent workflows, storage, APIs, and observability.
+              </desc>
+              <defs>
+                <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#27d6c8" />
+                  <stop offset="45%" stop-color="#f1c84b" />
+                  <stop offset="100%" stop-color="#7aa7ff" />
+                </linearGradient>
+                <filter id="softGlow">
+                  <feGaussianBlur stdDeviation="5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <path
+                class="flow-line"
+                d="M82 266 C196 150, 320 150, 442 255 S674 374, 800 270 S978 166, 1080 244"
+              />
+              <path class="replay-line" d="M780 336 C706 466, 476 482, 374 350" />
+              <path class="observe-line" d="M696 210 C754 112, 912 98, 1014 154" />
+
+              <g class="node cyan" transform="translate(40 204)">
+                <rect width="176" height="124" rx="8" />
+                <text x="88" y="48" text-anchor="middle">Machines</text>
+                <text x="88" y="78" text-anchor="middle">edge | sensors</text>
+              </g>
+
+              <g class="node yellow" transform="translate(284 118)">
+                <rect width="210" height="136" rx="8" />
+                <text x="105" y="50" text-anchor="middle">Event intake</text>
+                <text x="105" y="82" text-anchor="middle">Kafka | Event Hubs</text>
+              </g>
+
+              <g class="node green" transform="translate(540 206)">
+                <rect width="228" height="136" rx="8" />
+                <text x="114" y="50" text-anchor="middle">Contract core</text>
+                <text x="114" y="82" text-anchor="middle">schema | idempotency</text>
+              </g>
+
+              <g class="node blue" transform="translate(828 296)">
+                <rect width="204" height="126" rx="8" />
+                <text x="102" y="48" text-anchor="middle">API surface</text>
+                <text x="102" y="78" text-anchor="middle">REST | SQL | NoSQL</text>
+              </g>
+
+              <g class="node pink" transform="translate(912 106)">
+                <rect width="198" height="124" rx="8" />
+                <text x="99" y="48" text-anchor="middle">Operations</text>
+                <text x="99" y="78" text-anchor="middle">traces | SLO | DLQ</text>
+              </g>
+
+              <g class="note" transform="translate(282 392)">
+                <rect width="332" height="76" rx="8" />
+                <text x="24" y="32">WORK I KEEP CHOOSING</text>
+                <text x="24" y="58">make real-world telemetry dependable enough to build on</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="craft-grid">
+            <article class="craft-card reveal">
+              <span class="craft-index">01</span>
+              <h3>Contracts before scale</h3>
+              <p>
+                I treat schema evolution, validation, and API compatibility as first-class product surfaces, because
+                reliable telemetry depends on consistent meaning across services.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">02</span>
+              <h3>Replay is a feature</h3>
+              <p>
+                Idempotent handlers, DLQs, backfills, and deduplication make distributed ingestion recoverable instead
+                of fragile when devices reconnect or events arrive out of order.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">03</span>
+              <h3>Operate what you build</h3>
+              <p>
+                Logs, traces, metrics, alerts, and release discipline are part of the design. I like systems where the
+                failure mode can be seen, explained, and fixed without drama.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Professional experience</p>
+            <h2>Cloud services, ingestion platforms, and engineering ownership</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Mar 2025 - Present</span>
+                <strong>Sprouts AI</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Senior Software Engineer</h3>
+                <p class="location">Chicago, IL</p>
+                <ul>
+                  <li>
+                    Architected high-throughput, event-driven ingestion services in C# / ASP.NET Core on modern .NET,
+                    processing 1K+ daily events with versioned data contracts and schema evolution that sustained 99.9%
+                    uptime under bursty load.
+                  </li>
+                  <li>
+                    Designed distributed fault-tolerant workflows on Azure (Service Bus, AKS, Functions) with idempotent
+                    handlers, dead-letter queues, and reprocessing/backfill jobs, cutting tail latency 40% and
+                    eliminating duplicate-event incidents.
+                  </li>
+                  <li>
+                    Owned services end-to-end from design to production with GitLab CI/CD, Docker, and AKS deployments,
+                    plus Azure App Insights and Datadog-style observability, structured logs, distributed tracing,
+                    SLO-based alerts.
+                  </li>
+                  <li>
+                    Mentored engineers via thoughtful code reviews, raised the testing bar with xUnit-style suites, and
+                    set architectural standards for data contracts and schema evolution adopted across the platform.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Aug 2023 - Mar 2025</span>
+                <strong>Resilience Inc</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Engineer</h3>
+                <p class="location">Chicago, IL</p>
+                <ul>
+                  <li>
+                    Engineered cloud-native ASP.NET Core / .NET microservices on Azure, scaling to 500K+ monthly API
+                    requests with fault-tolerant, messaging-based event pipelines and horizontal autoscaling on AKS.
+                  </li>
+                  <li>
+                    Built ingestion services normalizing, validating, and enriching diverse JSON/XML feeds and external
+                    APIs into SQL Server / PostgreSQL with schema-conformance checks and reprocessing-safe backfills,
+                    reducing data freshness SLA from 4 hours to 20 minutes.
+                  </li>
+                  <li>
+                    Drove GitLab CI/CD pipelines with Docker, Kubernetes, and Prometheus/Grafana observability, cutting
+                    release cycles from 2 weeks to 2 days and reducing production incidents 45% via root-cause analysis
+                    and operational maturity improvements.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Apr 2018 - Aug 2023</span>
+                <strong>Tata Steel</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Engineer / IT Project Manager</h3>
+                <ul>
+                  <li>
+                    Architected high-throughput .NET microservices in C# / ASP.NET Core on Azure to ingest industrial
+                    IoT and machine telemetry from 40K+ users across heavy-equipment and plant systems, achieving 99.99%
+                    uptime and 40% faster API response times across 5+ business domains.
+                  </li>
+                  <li>
+                    Built event-driven distributed workflows in C# / .NET on Azure handling intermittent connectivity,
+                    out-of-order delivery, and multi-generation equipment formats, with relational (SQL Server, Oracle)
+                    and NoSQL (MongoDB) modeling, ingesting 5M+ daily records with versioned schemas, validation, and
+                    enrichment for downstream analytics.
+                  </li>
+                  <li>
+                    Led a 12-person cross-functional team driving full SDLC discipline, code reviews, unit testing,
+                    Git-based CI/CD, and architectural standards, cutting production incidents 50% and mentoring
+                    engineers on .NET, distributed systems, and IoT ingestion patterns.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skill-section">
+        <div class="section-inner skill-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Working set</p>
+            <h2>Stack for scalable cloud services</h2>
+          </div>
+          <div class="skill-cloud reveal" aria-label="Technical skills">
+            <span>C#</span>
+            <span>ASP.NET Core</span>
+            <span>.NET 8+</span>
+            <span>Entity Framework Core</span>
+            <span>Dapper</span>
+            <span>Azure</span>
+            <span>AKS</span>
+            <span>Azure Functions</span>
+            <span>Service Bus</span>
+            <span>Event Hubs</span>
+            <span>Event Grid</span>
+            <span>Cosmos DB</span>
+            <span>SQL Server</span>
+            <span>PostgreSQL</span>
+            <span>MongoDB</span>
+            <span>Kafka</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>GitLab CI/CD</span>
+            <span>Terraform</span>
+            <span>App Insights</span>
+            <span>Datadog</span>
+            <span>xUnit</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected projects</p>
+            <h2>Event pipelines, product systems, and low-level engineering range</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured reveal">
+              <div class="project-topline">Event-driven ingestion | Kafka | cloud</div>
+              <h3>Real-time Stock Market Analysis Pipeline</h3>
+              <p>
+                High-throughput streaming ingestion pipeline with Kafka, Spark Structured Streaming, and cloud object
+                storage, built around freshness, schema evolution, and reprocessing-safe layered storage.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card featured reveal">
+              <div class="project-topline">Commerce AI | webhooks | retrieval</div>
+              <h3>AskMyStore</h3>
+              <p>
+                Shopify-integrated application using webhooks, product data ingestion, vector retrieval, and fast API
+                responses over changing commerce data.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://askmystore.vercel.app/" target="_blank" rel="noreferrer">Open demo</a>
+                <a class="project-link source-link" href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Trading | dashboard | signals</div>
+              <h3>TradeSentinel</h3>
+              <p>
+                Market-aware trading dashboard focused on signal visibility, portfolio state, and practical decision
+                support for active monitoring workflows.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Open demo</a>
+                <a class="project-link source-link" href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">C++ | multicast | market data</div>
+              <h3>CME MDP 3.0 Multicast Feed Handler</h3>
+              <p>
+                Low-latency feed-handler work for decoding structured multicast market data, focused on deterministic
+                processing, protocol discipline, and performance-aware C++.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">LangChain | agents | search</div>
+              <h3>LangChain Chat with Search</h3>
+              <p>
+                Chat application combining LangChain agents, live search, and Streamlit UX to reason over changing
+                information sources.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">MERN | realtime | MongoDB</div>
+              <h3>STRANGERS</h3>
+              <p>
+                Social platform with event-driven backend behavior, real-time messaging, MongoDB persistence, and
+                JSON-based API design.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Operating systems | scheduling | memory</div>
+              <h3>EXPERIMENTAL OPERATING SYSTEM</h3>
+              <p>
+                Operating-system lab work exploring process control, memory layout, file-system concepts, and system
+                calls with an implementation-first approach.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Linux kernel | C | synchronization</div>
+              <h3>Character Device Driver</h3>
+              <p>
+                Kernel-space character device driver covering module lifecycle, kernel/user I/O, semaphore
+                synchronization, and proc filesystem debugging.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Hardware | ISA | datapath</div>
+              <h3>16-Bit RISC Processor</h3>
+              <p>
+                Processor design project mapping instruction behavior, datapath control, and hardware-level execution
+                decisions into a working lab implementation.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section research-section">
+        <div class="section-inner research-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Research and learning</p>
+            <h2>Measure, compare, improve</h2>
+            <p>
+              The same habits that make a reliable service also improve research work: compare approaches, track error
+              behavior, and make the result clear enough for another engineer to extend.
+            </p>
+          </div>
+          <div class="research-cards">
+            <article class="research-card reveal">
+              <h3>IEEE Publication</h3>
+              <p>
+                Comparative study of movie recommendation systems using feature engineering and improved error
+                functions across collaborative, content-based, and hybrid methods.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Open paper</a>
+                <a class="project-link source-link" href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+            <article class="research-card reveal">
+              <h3>Certificate</h3>
+              <p>
+                Supporting credential linked with the publication and project work, included as verification for the
+                research artifact.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">View certificate</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section close-section">
+        <div class="section-inner close-card reveal">
+          <p class="eyebrow">What keeps the work interesting</p>
+          <h2>Great backend systems make uncertainty manageable.</h2>
+          <p>
+            I like building services that do not assume ideal inputs: telemetry arrives late, APIs evolve, devices
+            reconnect, and teams still need dependable answers. That is the kind of engineering problem I keep coming
+            back to.
+          </p>
+          <a class="button primary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Dev Kumar</span>
+      <span>Cloud telemetry systems portfolio</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
